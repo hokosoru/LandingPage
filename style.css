@@ -1,4 +1,11 @@
  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+ :root {
+    --primary-bg-color: #2b3e50;  /* Dark Blue */
+    --secondary-bg-color: #34495e;  /* Slightly Lighter Blue */
+    --text-color: #ffffff;  /* White */
+    --button-color: orangered;  /* Red */
+    --button-hover-color: #ef695a;  /* Darker Red */
+  }
  *{
     font-family: 'Roboto', sans-serif;
     margin: auto;
@@ -13,7 +20,7 @@ html {
 nav{
     width: 100%;
     height: 10vh;
-    background-color: #1F2937;
+    background-color: var(--primary-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,10 +42,14 @@ nav ul li{
     padding: 0px 50px;
 }
 nav ul li a:hover{
-    color: orangered;
+    color: var(--button-color);
     border-radius: 10px;
     text-decoration: underline;
     transition: all .3s ease 0s;
+}
+nav .nav-logo img{
+    width: 80px;
+    height: 40px;
 }
 /* ABOUT SECTION */
 .about-section {
@@ -78,8 +89,7 @@ nav ul li a:hover{
     background-color: #1F293779;
     border-radius: 40px;
     text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Black transparent background */
+    color: var(--text-color);
     padding: 20px;
 
 }
@@ -107,16 +117,16 @@ nav ul li a:hover{
 button {
     margin-top: 40px;
     padding: 10px 20px;
-    background-color: orangered;
+    background-color: var(--button-color);
     border: none;
-    color: white;
+    color: var(--text-color);
     cursor: pointer;
     border-radius: 20px;
     font-size: 1.4rem;
 }
 button:hover{
     cursor: pointer;
-    background-color: #00BAFF;
+    background-color: var(--button-hover-color);
 }
 /* Featured Section */
 .featured-section {
@@ -148,13 +158,14 @@ button:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: auto;
 }
 .featured-section .games h1{
     font-size: 3.6rem;
     text-shadow: 5px 5px rgb(184, 115, 115);
 }
 .featured-section .games .roblox{
-    width: 60%;
+    width: 70%;
     height: 30vh;
     display: flex;
     justify-content: space-between;
@@ -162,8 +173,8 @@ button:hover{
     margin-top: 20px;
 }
 .lists {
-    width: 18%; /* Adjust the size as needed */
-    height: 30vh; /* Adjust the size as needed */
+    width: 15%; /* Adjust the size as needed */
+    height: 25vh; /* Adjust the size as needed */
     box-shadow: 0 20px 30px black;
     transition: 0.3s;
     background-color: #1F2937;
@@ -178,11 +189,11 @@ button:hover{
 .lists img {
     border-radius: 20px 20px 0px 0px;
     max-width: 100%;
-    height: 25vh;
+    height: 20vh;
     transition: transform 0.3s ease-in-out; /* Add transition for hover effect */
 }
 .lists h2{
-  color: orangered;
+  color: var(--button-color);
 }
 .lists:hover {
     transform: scale(1.1); /* Enlarge on hover */
@@ -191,12 +202,12 @@ button:hover{
 }
 .featured-section .quote{
   width: 100%;
-  height: 40vh;
+  height: 35vh;
   background-color: #1F293777;
   display: flex;
   flex-direction: column;
 }
-.quote h1{
+.quote p{
   text-align: center;
   margin-top: 15vh;
   font-size: 3rem;
@@ -206,4 +217,73 @@ button:hover{
   font-size: 1.8rem;
 }
 /* CONTACT SECTION */
+.contact-section {
+    background-color: var(--primary-bg-color);
+    padding: 80px 0;
+    text-align: center;
+}
+.contact-section .contact{
+    background-color: #1a2930;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+  
+}
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+  
+.contact-section p {
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+  
+.message-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+.message-button:hover {
+    background-color: var(--button-hover-color);
+}
+  
+  
 /* FOOTER SECTION */
+footer {
+    background-color: #1a2930;
+    color: white;
+    padding: 20px 0;
+}
+  
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+  
+.contact-info, .social-links {
+    text-align: center;
+}
+  
+.icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+  
+.icon i:hover {
+    color: orangered;
+}
+.footer-content p {
+    margin: 5px 0;
+  }
+  
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
