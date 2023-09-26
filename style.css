@@ -106,6 +106,9 @@ nav .nav-logo img{
     font-size: 2.8rem;
     font-weight: 700;
 }
+.context .p2{
+    font-size: 1.5rem;
+}
 .photo{
     width: 40%;
 }
@@ -286,4 +289,347 @@ footer {
 .copyright {
     text-align: center;
     margin-top: 20px;
+}
+
+/* RESPONSIVE CSSS */
+/* Media Query for screens between 1000px and 1380px */
+@media screen and (min-width: 1000px) and (max-width: 1380px) {
+    /* NAV SECTION */
+    nav ul li {
+        padding: 0px 30px;
+    }
+    nav .nav-logo {
+        font-size: 30px;
+    }
+    /* ABOUT SECTION */
+    .about-wrapper {
+        width: 80%;
+    }
+    .context {
+        width: 70%;
+    }
+    .about-wrapper .context .p1{
+        font-size: 2.5rem;
+    }
+    button{
+        margin-top: 15px;
+    }
+    /* FEATURED SECTION */
+    .featured-section .games .roblox {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .lists {
+        width: 20%;
+        margin-bottom: 10px;
+    }
+}
+/* Screen size between 769px and 999px */
+@media screen and (min-width: 769px) and (max-width: 999px) {
+    /* NAV SECTION */
+    nav ul li {
+        padding: 0px 30px; 
+    }
+    nav .nav-logo {
+        font-size: 30px; 
+    }
+    /* ABOUT SECTION */
+    .about-wrapper {
+        width: 80%;
+    } 
+    .about-section .context {
+        width: 70%; 
+    }
+    .about-wrapper .context .p1{
+        font-size: 2.5rem;
+    }
+    .about-wrapper .context .p2{
+        font-size: 1.5rem;
+    }
+    .photo {
+        display: block;
+    }
+    .photo img{
+        width: 80%;
+    }
+    .about-section .about-wrapper button{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    /* Featured Section */
+    .featured-section .games .roblox {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .lists {
+        height: 22vh;
+        width: 22%;
+        margin-bottom: 10px;
+    }
+    .featured-section .games h1 {
+        font-size: 3rem;
+    }
+    .lists img {
+        height: 18vh;
+        
+    }
+    .lists h2{
+      color: var(--button-color);
+      font-size: 1.3rem;
+    }
+    .featured-section .quote{
+        height: 30vh;
+    }
+    .quote p{
+        margin-top: 13vh;
+        font-size: 2.3rem;
+    }
+    .quote h3{
+        margin-left: 80%;
+        font-size: 1rem;
+    }
+}
+  
+  /* Screen size between 550px and 768px */
+@media screen and (min-width: 550px) and (max-width: 768px) {
+    /* NAV SECTION */
+    nav ul li {
+        padding: 0px 20px;
+    }
+    nav .nav-logo {
+        font-size: 25px;
+    }
+    /* ABOUT SECTION */
+    .about-wrapper {
+        width: 80%;
+        height: 43vh;
+    }
+      
+    .context {
+        width: 90%;
+    }
+      
+    .photo {
+        display: none;
+    }
+    .context .p1{
+        font-size: 2rem;
+    }
+    .context .p2{
+        font-size: 1.3rem;
+    }
+    .context button{
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    /* FEATURED SECTION */
+    .featured-section .games .roblox {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .lists {
+        height: 22vh;
+        width: 22%;
+        margin-bottom: 10px;
+    }
+    .featured-section .games h1 {
+        font-size: 3rem;
+    }
+    .lists img {
+        height: 18vh;
+        
+    }
+    .lists h2{
+      color: var(--button-color);
+      font-size: 1.2rem;
+    }
+    .featured-section .quote{
+        height: 30vh;
+    }
+    .quote p{
+        margin-top: 13vh;
+        font-size: 2rem;
+    }
+    .quote h3{
+        margin-left: 80%;
+        font-size: 1rem;
+    }
+    /* CONTACT SECTION */
+    .message-button {
+        padding: 10px 16px;
+        font-size: 20px;
+    }
+}
+  
+
+  /* Screen size between 481px and 549px */
+@media screen and (min-width: 481px) and (max-width: 549px) {
+    /* NAV SECTION */
+    nav ul li {
+            padding: 0px 15px;
+    }
+    nav .nav-logo {
+        font-size: 20px;
+    }
+    /* ABOUT SECTION */
+    .about-wrapper {
+        width: 80%;
+        height: 43vh;
+    }
+      
+    .context {
+        width: 100%;
+    }
+      
+    .photo {
+        display: none;
+    }
+    .context .p1{
+        font-size: 2rem;
+    }
+    .context .p2{
+        font-size: 1.2rem;
+    }
+    .context button{
+        margin-top: 15px;
+        font-size: .8rem;
+    }
+    /* FEATURED SECTION */
+    .featured-section .games .roblox {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 60%;
+        height: 50vh;
+        column-gap: 25px;
+        row-gap: 25px;
+    }
+
+    .lists {
+        height: 22vh;
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .featured-section .games h1 {
+        font-size: 3rem;
+    }
+    .lists img {
+        height: 18vh;
+        
+    }
+    .lists h2{
+      color: var(--button-color);
+      font-size: 1.2rem;
+    }
+    .featured-section .quote{
+        height: 25vh;
+    }
+    .quote p{
+        text-align: center;
+        margin-top: 8vh;
+        font-size: 1.8rem;
+    }
+    .quote h3{
+        margin-left: 65%;
+        font-size: 1rem;
+    }
+    /* CONTACT SECTION */
+    .contact-section .contact {
+        width: 80%;
+    }
+
+    .message-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+  
+
+  /* Screen size between 350px and 480px */
+@media screen and (min-width: 350px) and (max-width: 480px) {
+    /* NAV SECTION */
+    nav ul li {
+        padding: 0px 8px;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+    nav .nav-logo {
+        font-size: 1.5rem;
+    }
+    /* ABOUT SECTION */
+    .about-wrapper {
+        width: 85%;
+        height: 40vh;
+    }
+      
+    .context {
+        width: 100%;
+    }
+      
+    .photo {
+        display: none;
+    }
+    .context .p1{
+        font-size: 1.5rem;
+    }
+    .context .p2{
+        font-size: 1.1rem;
+    }
+    .context button{
+        margin-top: 10px;
+        font-size: .9rem;
+        padding:10px;
+    }
+     /* FEATURED SECTION */
+     .featured-section .games .roblox {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 60%;
+        height: 50vh;
+        column-gap: 25px;
+        row-gap: 25px;
+    }
+
+    .lists {
+        height: 20vh;
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .featured-section .games h1 {
+        font-size: 3rem;
+    }
+    .lists img {
+        height: 17vh;
+        
+    }
+    .lists h2{
+      color: var(--button-color);
+      font-size: 1.2rem;
+    }
+    .featured-section .quote{
+        height: 25vh;
+      }
+      .quote p{
+        text-align: center;
+        margin-top: 8vh;
+        font-size: 1.5rem;
+      }
+      .quote h3{
+        margin-left: 65%;
+        font-size: 1rem;
+      }
+    /* CONTACT SECTION */
+    .contact-section .contact {
+        width: 80%;
+    }
+
+    .message-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
 }
